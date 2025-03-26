@@ -1,0 +1,24 @@
+# Arquivos de build
+bin/
+obj/
+
+# Arquivos de IDE
+.vs/
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.pdb
+
+# Arquivos de ambiente
+appsettings.Development.json
+appsettings.Production.json
+
+# Arquivos de banco de dados
+*.mdf
+*.ldf
+*.ndf
+
+# Logs
+*.log 
