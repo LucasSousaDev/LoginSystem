@@ -1,6 +1,6 @@
 # API de Autenticação
 
-Esta API é responsável por intermediar a comunicação entre a aplicação [LoginService](https://github.com/zSakai/LoginService) e o banco de dados, fornecendo endpoints seguros para autenticação e gerenciamento de usuários.
+Esta API é responsável por intermediar a comunicação entre a aplicação [LoginService](https://github.com/LucasSousaDev/LoginService) e o banco de dados, fornecendo endpoints seguros para autenticação e gerenciamento de usuários.
 
 ## 🚀 Funcionalidades
 
