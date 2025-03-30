@@ -56,6 +56,11 @@ namespace LoginSystem.Services
             return await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
         }
 
+        public async Task<User> GetUserByEmail(string email)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+        }
+
         public async Task<User> UpdateUser(User user)
         {
             _context.Entry(user).State = EntityState.Modified;

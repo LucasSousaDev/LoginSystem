@@ -1,4 +1,3 @@
-
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using LoginSystem.Models;
@@ -66,7 +65,7 @@ namespace LoginSystem.Controllers
         {
             try
             {
-                var user = await _userService.GetUserByUsername(request.Email);
+                var user = await _userService.GetUserByEmail(request.Email);
                 if (user == null)
                 {
                     return BadRequest(new { message = "Eita! Não encontrei esse usuário 🤔" });

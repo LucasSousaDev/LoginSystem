@@ -8,6 +8,7 @@ namespace LoginSystem.Services
         Task<User> CreateUser(User user, string password);
         Task<User> GetUserById(int id);
         Task<User> GetUserByUsername(string username);
+        Task<User> GetUserByEmail(string email);
         Task<User> UpdateUser(User user);
         Task<bool> DeleteUser(int id);
     }
