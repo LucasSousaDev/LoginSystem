@@ -1,67 +1,89 @@
-# Sistema de Login com JWT
+# API de Autenticação
 
-Um sistema de autenticação simples usando ASP.NET Core Web API com JWT (JSON Web Tokens).
+Esta API é responsável por intermediar a comunicação entre a aplicação [LoginService](https://github.com/seu-usuario/LoginService) e o banco de dados, fornecendo endpoints seguros para autenticação e gerenciamento de usuários.
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
 - Registro de usuários
-- Login com JWT
+- Login com autenticação JWT
 - Logout
-- Proteção de rotas com autenticação
+- Validação de tokens
+- Gerenciamento de sessões
 
-## Requisitos
+## 🛠️ Tecnologias Utilizadas
 
-- .NET 9.0 SDK
+- .NET 7.0
+- Entity Framework Core
+- JWT (JSON Web Tokens)
+- SQL Server
+- Swagger/OpenAPI
+
+## 📋 Pré-requisitos
+
+- .NET 7.0 SDK
 - SQL Server
 - Visual Studio 2022 ou VS Code
 
-## Configuração
+## 🔧 Configuração
 
 1. Clone o repositório
+```bash
+git clone https://github.com/seu-usuario/LoginSystem.git
+```
+
 2. Configure a string de conexão no arquivo `appsettings.json`
-3. Execute as migrações do banco de dados:
-   ```bash
-   dotnet ef database update
-   ```
-4. Execute o projeto:
-   ```bash
-   dotnet run
-   ```
 
-## Endpoints
+3. Execute as migrações do banco de dados
+```bash
+dotnet ef database update
+```
 
-### Registro
-- POST `/api/auth/register`
-- Body:
-  ```json
-  {
-      "username": "seu_usuario",
-      "email": "seu_email@email.com",
-      "password": "sua_senha"
-  }
-  ```
+4. Execute o projeto
+```bash
+dotnet run
+```
+
+## 📝 Endpoints
+
+### Registro de Usuário
+```
+POST /api/Auth/register
+```
 
 ### Login
-- POST `/api/auth/login`
-- Body:
-  ```json
-  {
-      "email": "seu_email@email.com",
-      "password": "sua_senha"
-  }
-  ```
+```
+POST /api/Auth/login
+```
 
 ### Logout
-- POST `/api/auth/logout`
-- Header:
-  ```
-  Authorization: Bearer seu_token_jwt
-  ```
+```
+POST /api/Auth/logout
+```
 
-## Tecnologias Utilizadas
+## 🔒 Segurança
 
-- ASP.NET Core Web API
-- Entity Framework Core
-- JWT Authentication
-- SQL Server
-- BCrypt para hash de senhas 
+- Autenticação via JWT
+- Senhas criptografadas
+- Proteção contra ataques comuns
+- Validação de dados
+
+## 🤝 Integração com LoginService
+
+Esta API foi desenvolvida especificamente para atender às necessidades do [LoginService](https://github.com/seu-usuario/LoginService), fornecendo uma camada segura e eficiente para:
+
+- Autenticação de usuários
+- Gerenciamento de sessões
+- Validação de credenciais
+- Armazenamento seguro de dados
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👥 Contribuição
+
+1. Faça um Fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request 
