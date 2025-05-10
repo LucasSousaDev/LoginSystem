@@ -27,7 +27,7 @@ Esta API é responsável por intermediar a comunicação entre a aplicação [Lo
 
 1. Clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/LoginSystem.git
+git clone https://github.com/LucasSousaDev/LoginSystem.git
 ```
 
 2. Configure a string de conexão no arquivo `appsettings.json`
