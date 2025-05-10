@@ -16,7 +16,6 @@ Esta API é responsável por intermediar a comunicação entre a aplicação [Lo
 - Entity Framework Core
 - JWT (JSON Web Tokens)
 - SQL Server
-- Swagger/OpenAPI
 
 ## 📋 Pré-requisitos
 
@@ -69,21 +68,11 @@ POST /api/Auth/logout
 
 ## 🤝 Integração com LoginService
 
-Esta API foi desenvolvida especificamente para atender às necessidades do [LoginService](https://github.com/seu-usuario/LoginService), fornecendo uma camada segura e eficiente para:
+Esta API foi desenvolvida especificamente para atender às necessidades do [LoginService](https://github.com/LucasSousaDev/LoginService), fornecendo uma camada segura e eficiente para:
 
 - Autenticação de usuários
 - Gerenciamento de sessões
 - Validação de credenciais
 - Armazenamento seguro de dados
 
-## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 👥 Contribuição
-
-1. Faça um Fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request 
